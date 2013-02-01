@@ -1,4 +1,4 @@
 snippets
 ========
 
-A gamified search engine to be used for collecting data to assist uWaterloo research
+A gamified search engine to be used for collecting data to assist uWaterloo research.
