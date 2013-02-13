@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<head>
-			<title>Search Engine Snippet Response Analysis</title>
-		</head>
-	<body>
-		<div>
-			<ol>
-				<li>Log In</li>
-				<li>Create Account</li>
-			</ol>
-		</div>
-		<span>
-			<table border="1">
-				<tr>
-					<td>Attempt #</td>
-					<td>Correct?</td>
-					<td>Time</td>
-					<td>Points</td>
-				</tr>
 
-			</table>
-		</span>
-		<h1>Fake Search Engine</h1>
-		<div class="results">
-			<ol>
-				<li>this would be a search result</li>
-				<li>this would be another serach result but they should probably have a little bit more going on within them</li>
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<title>Search Engine Snippet Response Analysis</title>
+	</head>
+	<body>
+		<div id="header">
+			<span><h1 id="title" class="header">Snippets</h1></span>
+			<span><form id="login" class="header">
+				Email: <input type="email" id="email" name="email" value="123@abc.com">
+				Password: <input type="password" id="password" name="password" value="no">
+				<input type="submit" value="Login">
+			</form></span>
+		</div>
+		<div id="intro">
+			<p>
+				This is a paragraph of text explaining what's going on in this app.
+			</p>
+			<p>
+				I want to make it such that one of these options is clicked 
+				and then we do an action based on what was clicked: <br><br>
+				So when one of these buttons is clicked, it will send a 
+				request to a server with some information (probably the literal text that was clicked). Then the server will take 
+				this information and based on what it is will return some
+				information. This returned information will be a list of 
+				"search results" along with information about what the 
+				"right" answer is. <br><br>
+				To do this I need a server. <br><br>
+				Or can I just run the entire thing within the browser. 
+				I think I can. But the browser needs to be able to listen 
+				and respond. 
+			</p>
+		</div>
+		<div class="search">
+			<h2>Search For: <a href="scripts/main.js">Option1</a>, Option2, Option3 </h2> 
+		</div>
+		<div>
+			<ol class="results">
 				<li>
-					<div>
-						<p><a href="google.com">google.com</a></p>
-						<p>This where the url goes and it should be green or a different color</p>
-						<p>This is where the all important snippet goes</p>
+					<h3>
+						<a href="google.com">Name of Link</a>
+					</h3>
+					<div class="snippet">
+						<div><cite>google.com/blah/blah/blah</cite></div>
+						<span>Some descriptive text and <em>this is the search term(s)</em> and some more descriptive text.</span>
 					</div>
 				</li>
+				<li>another result</li>
+				<li>copying all of these would be obnoxious</li>
+				<li>Maybe that's what templating is for</li>
 			</ol>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+	    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+	    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+
+	    <script data-main="scripts/main" src="scripts/require.js"></script>
 	</body>
 </html>
