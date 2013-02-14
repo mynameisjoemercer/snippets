@@ -1,10 +1,10 @@
-// module with implicit name: login
+// module with implicit name: search
 
 // i only want this to run when the person has logged in.
 // i'm going to do that revealing elements when they log in that they interact with
 // in ways defined by this file. 
 // ??? I feel like there is probably a better way to do that though.
-define(function () {
+define(['searchOption'], function (searchOption) {
 
 	// i think what i want to do is return a an object that has
 	// the "game loop" in it. Then, when I'm ready in main.js
@@ -24,6 +24,10 @@ define(function () {
 
 		// each searchChoice should have a model and a view
 		// each search result should have a model and a view
+
+		console.log('searchOption:', searchOption);
+
+		searchOption;
 		
 	});
 
