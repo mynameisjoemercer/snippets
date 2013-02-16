@@ -9,6 +9,7 @@
 	var SearchOptionView = Backbone.View.extend({
 		el: $('div.search'),
 		events: {
+			// ??? onclick?
 			'click span.searchOption': 'runSearch'
 		},
 

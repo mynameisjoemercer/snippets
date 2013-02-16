@@ -1,6 +1,8 @@
 // module with implicit name: login
 define(function () {
 	$(document).ready(function () {
+
+
 		$('#email').select();
 		var name;
 		$('#email').blur(function () {
@@ -10,6 +12,7 @@ define(function () {
 			}
 		});
 		$('#login').submit(function (e) {
+
 			e.preventDefault();
 
 			if( $('#password').val() ) {
@@ -29,4 +32,4 @@ define(function () {
 
 	// I think this is all the exports stuff
 	return { test : function() { console.log('returned an object with a method'); } };
-})
+ })
