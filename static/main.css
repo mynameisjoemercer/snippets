@@ -1,0 +1,41 @@
+#header
+{
+	background-color: lightblue;
+}
+.header
+{
+	display: inline;
+	vertical-align: bottom;
+}
+#login, #welcome
+{
+	float: right;
+}
+.search, .searched
+{
+	padding-top: 10px;
+	padding-left: 20px; 
+}
+.searchOption
+{
+	color: blue;
+	text-decoration: underline;
+}
+ol.results
+{
+	list-style-type: none;
+	padding-top: 5px;
+	padding-left: 180px; 
+}
+ol.results li
+{
+	margin: 20px 0px;
+}
+ol.results li h3
+{
+	margin: 0px;
+}
+ol.results li cite
+{
+	color: green;
+}
